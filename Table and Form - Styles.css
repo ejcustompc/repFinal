@@ -1,0 +1,75 @@
+/*
+   Final   
+   Author: James Veldt & Evin Pauwee	
+   Date:  11/17/2017
+   Course Number: ISY 288
+   Professor: Dr.K.
+   
+
+   Filename:         index.html
+*/
+
+/* @font-face {
+  font-family: 'CuprumFFURegular';
+  src: url('fonts/Cuprum-webfont.eot');
+  src: local('â˜º'), url('fonts/Cuprum-webfont.woff') format('woff'), url('fonts/Cuprum-webfont.ttf') format('truetype'), url('fonts/Cuprum-webfont.svg#webfontKLktnWy4') format('svg');
+  font-weight: normal;
+  font-style: normal;
+  } */
+  
+/*table, th, td {
+	color: white;
+	text-shadow: 2px 2px 2px black;
+	border-collapse: collapse;
+	border: 1px solid black;
+	text-align: center;
+}
+*/
+#orderInfo {
+/* 	font-size: 1em;
+	color: white;
+    text-shadow: 4px 4px 4px black; */
+}
+#custInfo {
+	 /*font-size: 2em;
+	color: white;
+    text-shadow: 4px 4px 4px black; */
+}
+#BuildChoice {
+	color: red;
+	font-size: 1em;
+}
+/*Validation Check*/
+input:focus, select:focus, textarea:focus{ 
+	background-color: RGB(230,244,285);
+}
+table.BuildSpecs {
+	margin-left: auto; /*Horizontal allignment*/
+    margin-right: auto;
+	border-collapse: collapse; /* Border style */
+	text-align: center;	
+}
+tr, th, td{
+	border: 1px solid black; /* Border element */
+	padding: 1px;
+} 
+
+img{	
+	border-radius: 20px;
+	margin: 0 auto;
+}
+fieldset{
+	padding:1%;
+}
+
+form{
+	padding-top:2%;
+}
+
+caption{
+	padding:2%;
+	text-shadow: 2px -2px 6px gray;
+	font-weight: bold;
+	font-size: 125%;
+}
+   

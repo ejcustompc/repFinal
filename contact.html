@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html class="no-js">
+  <head>
+<!--
+   Final   
+   Author: James Veldt & Evin Paauwee	
+   Date:  11/17/2017
+   Course Number: ISY 288
+   Professor: Dr.K.
+   
+
+   Filename:         Contact Us.html
+-->
+
+<!-- This is where the CSS pages are linked to this page externally -->
+    <meta charset="utf-8" />
+	<title>Contact Us</title>
+	<link href="finalResetSS.css" rel="stylesheet"/>
+	<link rel="stylesheet" type="text/css" href="EJ.css" />
+	<link rel="stylesheet" type="text/css" href="Table and Form - Styles.css" /> <!-- This is the style sheet for the form/table -->
+	<link rel="shortcut icon" href="favicon.ico" />
+	<script src="EJ_script.js"></script>
+    <!--[if It IE 9]
+      <script src="scripts/semantic.js"></script>
+    <![endif]-->	  
+
+	  </head>
+	  
+	  <header>
+		  <h1>E & J Elite Custom Computers</h1>
+		  <h2>Contact Us</h2>	  
+			<nav>
+				<ul>
+					<li><a href ="index.html">Home</a></li>
+					<li><a href ="Novice_Build.html">Novice Build</a></li>
+					<li><a href ="Intermediate_Build.html">Intermediate Build</a></li>
+					<li><a href ="Expert_Build.html">Expert Build</a></li>
+					<li><a href ="finalMotherboard.html">Motherboard</a></li>
+					<li><a href ="finalCPU.html">CPU</a></li>
+					<li><a href ="finalRAM.html">RAM</a></li>
+					<li><a href ="contact.html">Contact Us</a></li>
+				</ul>
+			</nav>
+	  </header>
+	  <body>
+<form id="cform" action="http://mill_computers.com/orders/process.cgi" method="type" enctype="type"/> <!-- This is the form for creating a new customer in the array -->
+
+<fieldset id="orderInfo">
+	<legend><strong>Please add your information</legend>	
+	
+	
+	 <input type="checkbox" name="build" value="val"> Have you ever attempted building your own PC?
+	<!-- <select name="attemptBuild" id="attemptBuild" type="text">
+		<option value=”value1”>YES</option>
+		<option value=”value2”>NO</option>
+	</select> -->
+	<br />
+	Which PC build are you most interested in?
+	<select name="PCBuildInterest" id="PCBuildInterest" type="text">
+		<option value=”value1”>Novice Build</option>
+		<option value=”value2”>Intermediate Build</option>
+		<option value=”value3”>Expert Build</option>
+	</select>	
+	<br />
+	<!-- <input name=“addToEmailGoup” id="addToEmailGoup" value=YES type=“checkbox” />-->
+	<!-- <label for="addWarranty">Receive promotional emails including the chance to recieve discounts?</label> -->	
+	 <input type="checkbox" name="promo" value="val1"> Receive promotional emails including the chance to recieve discounts?
+	<!-- <input type="radio" name="addToEmailGroup" value="yes" checked> YES<br>
+    <input type="radio" name="addToEmilGroup" value="no"> NO<br> -->
+</fieldset>
+
+<fieldset id="custInfo"> <!-- This is where the customer attributes are added to the "Customer" instance -->
+	<legend>Contact Information</legend></br >
+	Name *
+	<input required name="custName" id="name" type="text" placeholder = "Name" />
+	</br >
+	
+	E-mail*
+	<input required name="custEmail" id="mail" type="email" placeholder = "E-mail"  />
+	</br >
+	
+	Street Address
+	<input name="custStreet" id ="street" type="text" placeholder = "Street Address" />
+	
+	City
+	<input name="custCity" id="city" type="text" placeholder = "City"/>
+	
+	State 
+	<input name="custState" id="state" type="text" placeholder = "State"/>
+	
+	Postal Code
+	<input name="custZip" id="zip" type="text" maxlength=“5” placeholder = "Postal Code"/>
+	<br />
+	
+	Phone Number
+	<!--<input name="custPhone" id="phone" type="tel" value="(xxx) xxx-xxxx" maxlength=“”/>-->
+	<input required name="phone" id="custPhone" type="text" placeholder="(555) 555-5555"
+			pattern= "^\d{10}$|^(\(\d{3}\)\s*)?\d{3}[\s-]?\d{4}$"/><br>	
+	</Strong>
+</fieldset>
+
+</form>
+
+<button type=“text” type="reset">
+		Clear Form
+</button>
+<button type=“text” type="contact">
+		Contact Me
+</button>
+<!-- 
+**JavaScript
+**
+**This is where I would like to add JavaScript to create/add customer to an array for a customer or add a person
+**something like: 
+
+Customer [] customerArray = new Customer[1] ;
+
+**The array would consist of 7 itmes in the constructor, such as:
+
+string custName = "input from form which is delcared in the form's element as:'name=custName' "
+string custEmail = "Input form form as explained above"
+string custAddress = "Input form form as explained above"
+string custCity = "Input form form as explained above"
+string custState = "Input form form as explained above"
+int custZip = "Input form form as explained above"
+int custPhone = "Input form form as explained above"
+
+**I would ideally have all sorts of validation to be sure that there are not "chars" in the "int" input boxes.
+**Also, I would impliment a "for loop" to scroll through the array to validate that there are no duplicate entries.
+**If duplicae data already exists in the "customerArray" I would throw an alert to the user saying:
+
+var arrayLength = customerArray.length;
+for (var i = 0; i < arrayLength; i++) {
+    alert(myStringArray[i]);   ----------Alert for dupliate data
+    "[i] - 'Already exists in our system, please try again.' "
+}
+
+-->
+</body>
+	  </div>
+	  <div id="description">
+	    <p>We are located just off the highway. Click the "Show On Map" link to see just how close we are!</p>	    
+	  </div>
+	  <nav id="mainnav">
+		<p>
+			<a href="https://www.google.com/maps/place/Ferris+State+University/@43.6834138,-85.4863669,17z/data=!3m1!4b1!4m5!3m4!1s0x8818d322e4239cd1:0xa511e8893935e491!8m2!3d43.6834099!4d-85.4841782">Show On Map</a>
+		</p>
+	  </nav>
+	  <figure>
+	    <img src="EJOffice.jpg" width="840" height="390" />
+	  </figure>
+	  <footer>
+	    <p><a href="mailto:veldtj@ferris.edu">E & J Elite </a>Phone: (616) 555-1818, Address: 1234 James St. Holland, MI 49423 Office Hours: Mon-Fri 8AM-5PM</p>
+      </footer>
+	</div>
+  </body>
+</html>

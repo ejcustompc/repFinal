@@ -1,0 +1,70 @@
+@charset "utf-8";
+/*
+Evin Paauwe
+James Veldt
+ISYS 288 
+FINAL PROJECT
+ */
+html{
+	font-family: Arial, Verdana;
+	background:radial-gradient(white, rgb(105,173,222), rgb(93,153,196));
+}
+header{
+	/*add background image*/
+	background-image: url("headerBanner1.jpg");
+}
+
+body{
+	/*center page*/
+	margin:0 auto;
+	max-width: 1280px;
+	min-width: 960px;
+	background-color: rgba(247,214,179, 0.6);
+	padding:1%;
+	
+}
+h1, h2 {
+	text-align: center;
+	
+}
+
+article, div, figure, figcaption, 
+header, footer {
+	display: block;
+}
+
+body > header > nav > ul {
+	margin:0 auto;
+	display: table;
+	table-layout: fixed;
+	width: 80%;	 
+	
+}
+
+body > header > nav > ul > li {
+	display: table-cell;
+	width:16%;
+	text-align: center;
+	/*add border*/
+	border-style:double;
+	border-width:5px;
+	box-shadow: 10px -5px 10px gray;
+	padding: 1%;
+	
+}
+h1, h2, h3{
+	/*add shadow to headers*/
+	text-shadow: 2px -2px 6px gray;
+}
+
+/*edit link style*/
+body > header > nav > ul > li > a{
+	text-decoration:none;
+	color:black;
+}
+
+footer{
+	text-align: center;
+	background-color: gray;
+	padding: 1px;
+}

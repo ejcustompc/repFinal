@@ -1,0 +1,18 @@
+@charset "utf-8";
+/*
+Evin Paauwe
+James Veldt
+ISYS 288 
+FINAL PROJECT
+ */
+ 
+ aside{
+	float:right;
+	padding:5%;
+
+}
+
+img#imgg{
+	transform: skewX(10deg);
+	border-radius: 20px;
+}
